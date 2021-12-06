@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myFirstDiv" ></div>
+    <div id="mySecondDiv"></div>
+    <div id="myThridDiv" ></div>
+    <div id="myFourthDiv" ></div>
+
+
+<!-- Somebody selected the elements and stored them into
+individual variables like this: -->
+
+
+<!-- const myFirstDiv = document.querySelector("#myFirstDiv");
+const mySecondDiv = document.querySelector("#mySecondDiv");
+const myThirdDiv = document.querySelector("#myThirdDiv");
+const myFourthDiv = document.querySelector("#myFourthDiv"); -->
+
+<script>
+    //!option one - by giving a class
+const myDivs = [];
+myDivs.push(document.getElementsByClassName("divNumbers"))
+console.log(myDivs)
+
+    //option two - by giving a class
+    newDivs = new Set();
+    newDivs.add(document.getElementsByClassName("divNumbers"));
+    console.log(newDivs)
+    //option three - putting all divs inside an objects
+    newObj = (document.querySelectorAll("div"));
+    for(let i of newObj.entries());
+    console.log(newObj)
+</script>
+<!-- Is there a better way you can store the individual elements
+with giving them different names? -->
+
+</body>
+</html>

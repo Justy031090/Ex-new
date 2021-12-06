@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+ <meta name="viewport" content="width=device-width,
+initial-scale=1.0" />
+ <title>Document</title>
+ </head>
+ <body>
+ <h1>Header</h1>
+ <p>Paragraph</p>
+ <a href="#">link</a>
+ <img src="" alt="" />
+ <div class="x">Div with a class</div>
+ <div id="y">Div with an id</div>
+ <input type="text" />
+ <input type="text" />
+ <input type="text" />
+ </body>
+ <script>
+     //w.o query selector
+const h1NoQuery = document.getElementsByTagName('h1');
+const pNoQuery = document.getElementsByTagName('p');
+const aNoQuery = document.getElementsByTagName('a');
+const imgNoQuery = document.getElementsByTagName('img');
+const divOneNoQuery = document.getElementsByClassName('x');
+const inputsNoQuery = document.getElementsByTagName('input');
+const divTwoNoQuery = document.getElementById("y");
+console.dir(h1NoQuery)
+console.dir(pNoQuery)
+console.dir(aNoQuery)
+console.dir(imgNoQuery)
+console.dir(divOneNoQuery)
+console.dir(divTwoNoQuery) //smt gone wrong..
+console.dir(inputsNoQuery)   
+console.log(divTwoNoQuery) //smt gone wrong..
+
+     //query selector
+ const allElements = document.querySelectorAll('*');
+ const h1 = document.querySelector('h1');
+ const p = document.querySelector('p');
+ const a = document.querySelector('a');
+ const img = document.querySelector('img');
+ const divOne = document.querySelector('.x');
+ const divTwo = document.querySelector('#y');
+ const inputs = document.querySelectorAll('input');
+ console.log(allElements)
+ console.log(h1);
+ console.log(p);
+ console.log(a);
+ console.log(img);
+ console.log(divOne);
+ console.log(divTwo);
+ console.log(inputs);
+
+inputs.forEach(q => {
+    console.log(q)
+});
+
+inputsNoQueryIteration= Array(inputsNoQuery).forEach(nq=>console.log(nq))
+</script>
+</html>

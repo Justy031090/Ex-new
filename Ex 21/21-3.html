@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 21-3 Text-Area</title>
+</head>
+<style>
+    body{
+        background: beige;
+    }
+    textarea{
+        background: #fff;
+    }
+    .position{
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+        align-items: flex-start;
+        margin-left: 25%;
+    }
+    .submit{
+        width: 30%;
+        margin-top: 10px;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .tell-more{
+        visibility: hidden;
+        font-size: 30px;
+        color:  red;
+    }
+    .thank{
+        visibility:hidden;
+        font-size: 30px;
+        color:  red;
+    }
+</style>
+<body>
+    <div class="position">
+        <div class="sumbit-area">
+        <h1 class="question">Why are you interested in this position ?</h1>
+        <textarea class="txt" id="" cols="70" rows="30"></textarea>
+        <button class = "sub" type="submit">Click to submit</button>
+    </div>
+        <div class="tell-more">Please tell us more about yourself</div>
+        <div class="thank">Thank you</div>
+    </div>
+    
+
+
+
+    <script src="/21-3.js"></script>
+</body>
+</html>
