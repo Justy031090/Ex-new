@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: wheat;
+}
+table{
+    border: 1px solid red;
+    text-align: center;
+}
+td{
+    border: 1px solid black;
+    padding: 1rem 1.25rem;
+}
+thead{
+    font-weight: 900;
+    color: blue;
+}
+th{
+    padding: 1rem 1.25rem;
+    text-align: center;
+}

@@ -11,7 +11,8 @@ const myObj = {
         console.log(this.name)
     },
     printTwo: function(){
-        setTimeout (function (){
+        setTimeout (function (){ 
+            //! if made an arrow function, it wouldnt have its own "this, so it would lookup"
             console.log(this.name)
         }.bind(this) , 1000) 
     }

@@ -1,0 +1,38 @@
+body{
+    background: wheat;
+    text-align: center;
+    
+}
+.flex-container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.poster-container{
+    padding: 2rem;
+}
+.movie-container{
+    text-align: left;
+    padding: 3rem;
+    font-size: 1.25rem;
+}
+.search-area{
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+#search{
+    width: 30%;
+    margin: 0;
+    font-size: 1.25rem;
+}
+.search-btn{
+    margin:0;
+    font-size: 1.25rem;
+}
+.ratings{
+    padding: 3rem;
+    font-size: 1.25rem;
+}
